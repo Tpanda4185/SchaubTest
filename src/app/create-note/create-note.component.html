@@ -1,0 +1,24 @@
+<ng-container *ngIf="isShowNote">
+<div class="overlay"></div>
+<div class="note-container">
+    <div class="note-header d-flex">
+        <span class="note-title">Create Note</span>
+        <button class="btn btn-sm" (click)="toggleNote()"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <div class="note-body">
+        <form>
+            <div class="form-group mb-3">
+                <label for="title">Title</label>
+                <input type="text" class="form-control" id="title" placeholder="Enter the Title" name="title" [(ngModel)]="noteData.title">
+            </div>
+            <div class="form-group">
+                <label for="content">Content</label>
+                <textarea class="form-control" id="content" name="content" rows="5" placeholder="enter the content" [(ngModel)]="noteData.content"></textarea>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary mt-3 float-right" (click)="onSubmit()">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+</ng-container>

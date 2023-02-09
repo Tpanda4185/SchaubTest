@@ -1,0 +1,24 @@
+.swift-title {
+    flex: 1;
+}
+
+.body-content {
+    .card-body {
+        height: 140px;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .no-record-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+
+        .no-record {
+            font-size: 24px;
+        }
+    }
+}
